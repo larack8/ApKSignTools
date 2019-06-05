@@ -6,57 +6,56 @@
     android:orientation="vertical"
     tools:context="com.larack.sgin.MainActivity">
 
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:background="@color/colorPrimary"
         android:gravity="center"
-        android:padding="12dp">
+        android:padding="15dp"
+        android:text="获取应用签名"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="获取应用签名"
-            android:textColor="@android:color/white"
-            android:textSize="18sp" />
-    </LinearLayout>
-
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="16dp"
-        android:orientation="horizontal">
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="25dp"
+        android:text="获取已安装的第三方应用签名"
+        android:textColor="#4a4a4a"
+        android:textSize="16sp" />
 
-        <TextView
-            android:id="@+id/pkgTips"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="输入应用包名"
-            android:textSize="16sp" />
+    <Button
+        android:id="@+id/selectBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:background="@color/colorPrimary"
+        android:text="选择APP"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
 
-        <Button
-            android:id="@+id/selectBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="6dp"
-            android:layout_weight="1"
-            android:background="@color/colorPrimary"
-            android:text="选择APP"
-            android:textColor="#ffffff"
-            android:textSize="20sp" />
-    </LinearLayout>
+    <TextView
+        android:id="@+id/pkgTips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:hint="应用包名:"
+        android:textSize="16sp" />
 
     <EditText
         android:id="@+id/packageField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
         android:hint="输入应用包名"
         android:text="com.larack.sgin"
         android:textSize="16sp" />
@@ -65,9 +64,9 @@
         android:id="@+id/genSignatureBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
         android:background="@color/colorPrimary"
         android:text="获取签名"
         android:textColor="#ffffff"
@@ -76,9 +75,9 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
         android:text="签名MD5:"
         android:textSize="16sp" />
 
@@ -86,29 +85,23 @@
         android:id="@+id/resultText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:textSize="16sp"
-        tools:text="sffdsfdgfdfgd:" />
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:text="md5"
+        android:textSize="15sp"
+        tools:text="md5" />
 
     <Button
         android:id="@+id/copyBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
         android:background="@color/colorPrimary"
         android:text="复制签名到剪切板"
         android:textColor="#ffffff"
         android:textSize="20sp" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="25dp"
-        android:text="获取已安装的第三方应用签名"
-        android:textColor="#4a4a4a"
-        android:textSize="16sp" />
 </LinearLayout>
